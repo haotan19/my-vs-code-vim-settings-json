@@ -1,0 +1,173 @@
+{
+  "editor.suggestSelection": "first",
+  "shopifyLiquid.formatterDevPreview": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "git.enableSmartCommit": true,
+  "vim.useSystemClipboard": true,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.lineNumbers": "relative",
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<tab>"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<S-tab>"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+    {
+      "before": ["s"],
+      "after": ["<leader>", "<leader>", "2", "s", "<char>", "<char>"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "k"],
+      "after": ["<Esc>"]
+    }
+  ],
+  // Visual mode
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [">"],
+      "after": [">", "g", "v"]
+    },
+    {
+      "before": ["<"],
+      "after": ["<", "g", "v"]
+    },
+    // Greatest remap ever from ThePrimeagen: use this when keep pasting things in visual model
+    {
+      "before": ["<leader>", "p"],
+      "after": ["\"", "_", "d", "P"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    },
+    {
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.action.splitEditor"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["revealInExplorer"]
+    },
+    {
+      "before": ["<leader>", "h"],
+      "after": ["_"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "after": ["$"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-f>": false,
+    "<C-a>": false,
+    "<C-c>": false,
+    "<C-v>": false,
+    "<C-w>": false
+    // VS Code new marker @ next occurence
+  },
+  "vim.hlsearch": true,
+  "vim.visualstar": true,
+  "vim.foldfix": true,
+  "vim.easymotion": true,
+  "vim.easymotionMarkerBackgroundColor": "rgba(0, 0, 0, 0.7)",
+  "vim.easymotionMarkerForegroundColorOneChar": "pink",
+  "cSpell.userWords": [
+    "animejs",
+    "aspectratio",
+    "chakra",
+    "endcapture",
+    "endstyle",
+    "endunless",
+    "Formik",
+    "Givenchy",
+    "gsap",
+    "jotai",
+    "learnq",
+    "lozad",
+    "renderless",
+    "richtext",
+    "semibold",
+    "Splide",
+    "Strapi",
+    "swiper",
+    "tailwindcss"
+  ],
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "explorer.confirmDragAndDrop": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.autofetch": true,
+  "liquid.format": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.fontSize": 14,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true,
+    "source.fixAll.eslint": true
+  },
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.smoothScrolling": true,
+  "workbench.colorTheme": "Cobalt2",
+  "workbench.iconTheme": "material-icon-theme",
+  "css.lint.unknownAtRules": "ignore",
+  "multiCommand.commands": [
+    {
+      "command": "multiCommand.saveAndCloseEditor",
+      "sequence": [
+        "workbench.action.files.save",
+        "workbench.action.closeActiveEditor"
+      ]
+    }
+  ],
+  "explorer.confirmDelete": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "todohighlight.keywords": ["NOTE:", "DEBUG:", "IMPROVEMENT:"],
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": false,
+  "editor.inlineSuggest.enabled": true
+}
