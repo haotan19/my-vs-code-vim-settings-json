@@ -13,6 +13,14 @@
       "after": ["d", "d"]
     },
     {
+      "before": ["<leader>", "q"],
+      "after": [":", "q", "<Enter>"]
+    },
+    {
+      "before": ["<leader>", "w"],
+      "after": [":", "w", "<Enter>"]
+    },
+    {
       "before": ["<tab>"],
       "commands": ["workbench.action.nextEditor"]
     },
@@ -133,8 +141,8 @@
   },
   "git.autofetch": true,
   "liquid.format": true,
-  "editor.formatOnPaste": false,
-  "editor.formatOnType": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -168,6 +176,6 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true
 }
