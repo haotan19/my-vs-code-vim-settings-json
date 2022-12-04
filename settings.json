@@ -61,6 +61,14 @@
       "after": ["d", "d"]
     },
     {
+      "before": ["<C-u>"],
+      "after": ["<C-u>", "z", "z"]
+    },
+    {
+      "before": ["<C-d>"],
+      "after": ["<C-d>", "z", "z"]
+    },
+    {
       "before": ["<C-n>"],
       "commands": [":nohl"]
     },
@@ -96,7 +104,6 @@
   },
   "vim.hlsearch": true,
   "vim.visualstar": true,
-  "vim.foldfix": true,
   "vim.easymotion": true,
   "vim.easymotionMarkerBackgroundColor": "rgba(0, 0, 0, 0.7)",
   "vim.easymotionMarkerForegroundColorOneChar": "pink",
@@ -140,7 +147,22 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "git.autofetch": true,
-  "liquid.format": true,
+  // "liquid.format": false,
+  // New v3.0.0 Settings
+  "liquid.enable": true,
+  "liquid.format.enable": false, //  instead of "liquid.format": true,
+  "liquid.format.ignore": [],
+  "liquid.format.wrap": 0,
+  "liquid.format.indentSize": 2,
+  "liquid.format.endNewLine": false,
+  "liquid.format.commentIndent": false,
+  "liquid.format.preserveLine": 3,
+  "liquid.format.preserveComment": false,
+  "liquid.format.crlf": false,
+  "liquid.format.markup": {},
+  "liquid.format.script": {},
+  "liquid.format.style": {},
+  "liquid.format.json": {},
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
   "[jsonc]": {
@@ -158,7 +180,7 @@
   "editor.cursorBlinking": "phase",
   "editor.cursorSmoothCaretAnimation": true,
   "editor.smoothScrolling": true,
-  "workbench.colorTheme": "Cobalt2",
+  "workbench.colorTheme": "Dark+ Pure Black (OLED)",
   "workbench.iconTheme": "material-icon-theme",
   "css.lint.unknownAtRules": "ignore",
   "multiCommand.commands": [
@@ -177,5 +199,37 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.formatOnSave": true,
-  "editor.inlineSuggest.enabled": true
+  "editor.inlineSuggest.enabled": true,
+  "[liquid]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "themeCheck.checkOnChange": false,
+  "themeCheck.checkOnSave": false,
+  "themeCheck.checkOnOpen": false,
+  "themeCheck.onlySingleFileChecks": false,
+  "http.proxy": "http://localhost:7890",
+  "git.confirmSync": false,
+  "liquid.format": true,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": true
+  },
+  "vscode-neovim.highlightGroups.highlights": {
+    "Directory": "vim",
+    "IncSearch": {
+      "backgroundColor": "theme.editor.findMatchBackground",
+      "borderColor": "theme.editor.findMatchBorder"
+    },
+    "Search": {
+      "backgroundColor": "theme.editor.findMatchHighlightBackground",
+      "borderColor": "theme.editor.findMatchHighlightBorder"
+    },
+    "Visual": {
+      "backgroundColor": "theme.editor.selectionBackground"
+    },
+    "Conceal": "vim",
+    "Substitute": "vim"
+  }
 }
